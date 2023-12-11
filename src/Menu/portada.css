@@ -1,0 +1,750 @@
+/* portada.css */
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro Roman';
+  src: url('../Assets/NeueHaasDisplayRoman.ttf') format('truetype');
+  /* Puedes agregar más formatos de fuente según sea necesario */
+}
+
+
+h2{
+  font-family: 'Hellix ExtraBold';
+  font-size: 54px;
+  line-height: 1;
+  color: #D9D9D9;
+}
+
+h6{
+  font-family: 'Neue Haas Grotesk Display Pro Roman';
+  font-size:24px;
+  line-height: 1.2;
+  color: #D9D9D9;
+}
+
+h3{
+  font-family: 'Neue Haas Grotesk Display Pro Roman';
+  font-size: 28;
+  line-height: 1.2;
+  color: #D9D9D9;
+}
+
+
+.card {
+    border: none;
+    border-radius: 0;
+}
+  
+.card-title {
+  font-family: 'Hellix ExtraBold';
+  font-size: 64px;
+  line-height: 1;
+  
+}
+
+.card-img {
+  filter: contrast(50%); /* Ajusta el valor según sea necesario, 100% es el valor predeterminado */
+}
+
+
+.card-text{
+  font-family: 'Neue Haas Grotesk Display Pro Roman';
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.card {
+  position: relative;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: left; /* Centrar el texto horizontalmente */
+}
+
+.card-title,
+.card-text {
+  margin-bottom: 20px; /* Ajusta el espacio entre h1 y h3 según sea necesario */
+  color: #D9D9D9;
+}
+
+
+.card-title {
+  color: #D9D9D9; /* Color del texto, ajusta según sea necesario */
+}
+
+.card-title::after {
+  content: '.'; /* Agrega un punto al final del contenido del h1 */
+  color: #781EDC; /* Cambia el color del punto a rojo */
+}
+
+
+.full-width-card {
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
+
+
+.left-image {
+  margin-left: 0px;
+  width: 50%; /* Ancho de la imagen, ajusta según sea necesario */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-right: 20px; 
+}
+
+
+.right-content {
+  flex: 1;
+  padding: 20px; /* Ajusta el relleno según sea necesario */
+  box-sizing: border-box; /* Evita que el relleno afecte el ancho total */
+  position: relative; /* Añadido para posicionar los círculos de manera relativa al contenedor */
+  margin: 20px
+}
+
+.card-title {
+  position: relative; /* Añadido para posicionar los círculos de manera relativa al título */
+}
+
+.card-title::before,
+.card-title::after {
+  content: '';
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 5px; /* Espacio entre los círculos y el título */
+  border-radius: 50%;
+  position: absolute;
+  top: 15px; /* Ajusta la posición vertical según sea necesario */
+}
+
+.full-width-card{
+  background-color: #262626;
+  border: #781EDC solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.boton-cv {
+  display: inline-block;
+  align-items: center; 
+  padding: 10px 30px; /* Ajusta el relleno según sea necesario */
+  text-decoration: none;
+  font-family: 'Neue Haas Grotesk Display Pro Medium';
+  color: #D9D9D9; /* Color del texto, ajusta según sea necesario */
+  border: 1px solid #781EDC;
+  border-radius: 10px;
+  transition: background-color 0.3s ease; /* Agregado para suavizar la transición del color de fondo */
+}
+
+.boton-cv:hover {
+  background-color: #781EDC;
+  color: #D9D9D9; /* Cambia el color del texto al pasar el ratón por encima */
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px; /* Espacio entre los círculos */
+  margin-bottom: 40px;
+}
+
+.violeta {
+  background-color: #781EDC;
+}
+
+.blanco {
+  background-color: #D9D9D9;
+}
+
+h2,
+h6,
+.boton-cv {
+  margin-bottom: 50px;
+  margin-right: 100px; /* Márgenes entre los elementos de texto y el botón */
+}
+
+.fondo-habilidades{
+  width: 100%;
+  padding: 60px;
+  background-image: url('../Assets/fondohabil.png');
+  background-size: 100% 100%; /* Cambiado a 100% 100% para adaptarse a cualquier tamaño */
+}
+
+.hablidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 15px;
+}
+
+.fondo-portafolio {
+  width: 100%;
+  padding: 60px;
+  background-image: url('../Assets/fondogris.png');
+  background-size: 100% 100%; /* Cambiado a 100% 100% para adaptarse a cualquier tamaño */
+}
+
+.portafolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 15px;
+  color: #262626;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Cambiado a 'center' */
+  margin-top: 20px; /* Ajusta según sea necesario */
+  transition: transform 0.5s ease-out;
+  transform-style: preserve-3d;
+}
+
+.image-container img {
+  width: 30%; /* Ajusta según sea necesario */
+  margin: 0;
+  border-radius: 1%;
+  padding: 3px;
+  transition: transform 0.9s ease-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.03);
+}
+
+.enlace-behance {
+  color: inherit; /* Hereda el color del texto del contenedor padre */
+  text-decoration: none; /* Elimina la decoración de subrayado predeterminada */
+  cursor: pointer; /* Muestra el cursor como puntero al pasar el ratón */
+}
+
+.enlace-behance:hover {
+  text-decoration: underline; /* Agrega subrayado al pasar el ratón sobre el enlace */
+}
+
+
+.sexta-card {
+  background-image: url('../Assets/fondocontacto.png');
+  background-size: 100% 100%; /* Cambiado a 100% 100% para adaptarse a cualquier tamaño */
+  background-repeat: no-repeat; /* Evitar repetir la imagen */
+  background-position: center; /* Centrar la imagen */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 100px;
+  margin: 0;
+}
+
+.cuadrado {
+  display: flex;
+  background-color: rgba(217, 217, 217, 0.9);
+  align-items: center;
+  border-radius: 5px;
+  position: relative; /* Añadido para posicionar los elementos hijos relativos a este contenedor */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+}
+
+.right-content,
+.left-form {
+  flex: 1;
+  padding: 20px;
+  color: #262626;
+}
+
+.left-form {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.right-content h2 {
+  margin-bottom: 10px;
+}
+
+.right-content h6 {
+  margin-bottom: 20px;
+}
+
+.boton-cv {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #781EDC; 
+  color: #D9D9D9;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+}
+
+.boton-cv:hover {
+  color: #781EDC; 
+  background-color: #D9D9D9;
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 40px;
+}
+
+.violeta {
+  background-color: #781EDC;
+}
+
+.negro {
+  background-color: #262626;
+}
+
+.negrot {
+  color: #262626;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon {
+  font-size: 24px;
+  margin: 5px; /* Ajusta el espacio entre los íconos */
+  color: #781EDC;
+}
+
+
+.left-form input,
+.left-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #781EDC; /* Cambiado a violeta */
+  border-radius: 5px;
+  font-size: 1em;
+  width: calc(100% - 22px); /* Ajustado para tener en cuenta el ancho del borde */
+}
+
+.left-form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.left-form label {
+  font-family: 'Neue Haas Grotesk Display Pro Roman';
+  line-height: 1.2;
+  color: #262626;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+}
+
+.left-form button {
+  padding: 10px 15px;
+  background-color: #781EDC; 
+  color: #D9D9D9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: background-color 0.3s;
+}
+
+.left-form button:hover {
+  color: #781EDC; 
+  background-color: #D9D9D9;
+  border: 1px solid #781EDC;
+}
+
+.left-form input,
+.left-form textarea,
+.left-form button {
+  width: 100%;
+}
+
+
+
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px;
+  background-image: url('../Assets/fondotimeline.png');
+  background-size: 100% 100%; /* Cambiado a 100% 100% para adaptarse a cualquier tamaño */
+  background-position: center;
+}
+
+.card.fondo-timeline {
+  background: transparent;
+  color: #D9D9D9;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+
+
+/* Agrega estilos específicos para el conector y otros elementos si es necesario */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px;
+  background-image: url('../Assets/fondotimeline.png');
+  background-size: 100% 100%; /* Cambiado a 100% 100% para adaptarse a cualquier tamaño */
+  background-position: center;
+}
+
+.card.fondo-timeline {
+  background: transparent;
+  color: #D9D9D9;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 60px; /* Ajusta según sea necesario para márgenes grandes */
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.timeline-arrow {
+  color: #781EDC; /* Color del ícono, ajusta según sea necesario */
+  font-size: 24px; /* Tamaño del ícono, ajusta según sea necesario */
+  margin-top: 20px; /* Espaciado superior del ícono, ajusta según sea necesario */
+}
+
+.timeline-content {
+  max-width: 600px;
+  background: transparent;
+  color: #333;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15);
+  margin-top: 20px; /* Ajusta según sea necesario */
+  height: 100px; /* Ajusta la altura según tus necesidades */
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timeline-content p {
+  font-family: 'Neue Haas Grotesk Display Pro Roman';
+  line-height: 1.2;
+  color: #D9D9D9;
+  font-size: 1em;
+}
+
+.timeline-content h3 {
+  font-family: 'Neue Haas Grotesk Display Pro Black';
+  line-height: 2.5;
+  color: #781EDC;
+  font-size: 1.5em;
+  font-weight: bold; /* Agregado el estilo bold */
+  margin-bottom: 5px;
+}
+
+
+.timeline-year {
+  font-family: 'Neue Haas Grotesk Display Pro Black';
+  color: #D9D9D9;
+  font-size: 1em;
+  font-weight: bold; /* Agregado el estilo bold */
+  background-color: rgba(38, 38, 38, 0.8); /* Utiliza rgba para agregar opacidad al fondo */
+  padding: 10px 10px;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 770px) {
+  .card{
+    border-radius: none;
+  }
+  /* Estilos ajustados para la primera card */
+  .card-title {
+    font-size: 35px;
+  }
+
+  .card-img-overlay {
+    left: 40%;
+  }
+
+  .card-text {
+    font-size: 20px;
+  }
+
+  /* Estilos ajustados para la segunda card */
+
+
+  .full-width-card {
+    flex-direction: column; /* Cambia la dirección del flexbox para apilar la imagen y el contenido en pantallas más pequeñas */
+  }
+
+  .left-image {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% para que ocupe todo el ancho del contenedor */
+    margin-right: 0; /* Elimina el margen derecho de la imagen */
+    margin-bottom: 20px; /* Añade un margen inferior para separar la imagen del contenido */
+  }
+
+  .right-content {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  h2{
+    font-family: 'Hellix ExtraBold';
+    font-size: 32px;
+    line-height: 1;
+    color: #D9D9D9;
+  }
+  
+  h6{
+    font-family: 'Neue Haas Grotesk Display Pro Roman';
+    font-size:18px;
+    line-height: 1.2;
+    color: #D9D9D9;
+  }
+  
+  h3{
+    font-family: 'Neue Haas Grotesk Display Pro Roman';
+    font-size:18px;
+    line-height: 1.2;
+    color: #D9D9D9;
+  }
+
+  .boton-cv {
+    display: inline-block;
+    align-items: center; 
+    padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+    text-decoration: none;
+    font-family: 'Neue Haas Grotesk Display Pro Medium';
+    font-size:14px;
+    color: #D9D9D9; /* Color del texto, ajusta según sea necesario */
+    border: 1px solid #781EDC;
+    }  
+
+    .sexta-card {
+      padding: 50px; /* Ajusta el relleno para pantallas más grandes */
+    }
+  
+    .cuadrado {
+      flex-direction: row; /* Ajusta la dirección del flexbox para mostrar los elementos en línea */
+    }
+  
+    .right-content,
+    .left-form {
+      flex: 1;
+      padding: 20px;
+    }
+  
+    .right-content h2 {
+      margin-bottom: 10px;
+    }
+  
+    .right-content h6 {
+      margin-bottom: 20px;
+    }
+  
+    .left-form input,
+    .left-form textarea {
+      width: 100%; /* Divide el ancho en dos para mostrar los campos en línea */
+    }
+  
+    .left-form button {
+      width: 50%; /* Ajusta el ancho del botón para pantallas más grandes */
+    }
+  
+    .left-form input,
+    .left-form textarea,
+    .left-form button {
+      margin-bottom: 15px; /* Espacio entre los elementos en línea */
+    }
+
+}
+
+
+
+
+
+@media (max-width: 430px) {
+  /* Estilos ajustados para la primera card */
+  .card {
+    border-radius: none;
+  }
+
+  .card-title {
+    font-size: 25px; /* Ajusta el tamaño del título para pantallas más pequeñas */
+    align-items: top;
+    justify-content: top;
+  }
+
+  .card-img-overlay {
+    left: 40%; /* Centrar el texto horizontalmente en pantallas más pequeñas */
+  }
+
+  .card-text {
+    font-size: 15px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Estilos ajustados para la segunda card */
+  .full-width-card {
+    flex-direction: column; /* Cambia la dirección del flexbox para apilar la imagen y el contenido en pantallas más pequeñas */
+    align-items: center; /* Centra los elementos horizontalmente en pantallas más pequeñas */
+  }
+
+  .left-image {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% para que ocupe todo el ancho del contenedor */
+  }
+
+  .right-content {
+    padding: 10px; /* Ajusta el relleno para pantallas más pequeñas */
+    margin: 10px; /* Ajusta el margen para pantallas más pequeñas */
+    text-align: center; /* Centra el texto horizontalmente en pantallas más pequeñas */
+  }
+
+  h2 {
+    font-size: 20px; /* Ajusta el tamaño del título para pantallas más pequeñas */
+    text-align: center;
+  }
+
+  h6 {
+    font-size: 12px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    margin-bottom: 10px; /* Ajusta el espacio entre el texto y el botón */
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+
+  .boton-cv {
+    padding: 5px 10px; /* Ajusta el relleno del botón para pantallas más pequeñas */
+    font-size: 12px; /* Ajusta el tamaño del texto del botón para pantallas más pequeñas */
+  }
+
+  .sexta-card {
+    padding: 50px; /* Ajusta el relleno para pantallas más grandes */
+  }
+
+  .cuadrado {
+    flex-direction: column; /* Cambia la dirección del flexbox para apilar los elementos en pantallas más pequeñas */
+    align-items: center; /* Centra los elementos horizontalmente en pantallas más pequeñas */
+    width: 100%;
+  }
+
+  .right-content,
+  .left-form {
+    flex: 1;
+    padding: 10px; /* Ajusta el relleno para pantallas más pequeñas */
+    text-align: center; /* Centra el texto horizontalmente en pantallas más pequeñas */
+  }
+
+  .right-content h2 {
+    font-size: 24px; /* Ajusta el tamaño del título para pantallas más pequeñas */
+    margin-bottom: 5px; /* Ajusta el espacio entre el título y el párrafo */
+  }
+
+  .right-content h6 {
+    font-size: 14px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    margin-bottom: 10px; /* Ajusta el espacio entre el párrafo y el botón */
+  }
+
+  .boton-cv {
+    padding: 8px 12px; /* Ajusta el relleno del botón para pantallas más pequeñas */
+    font-size: 14px; /* Ajusta el tamaño del texto del botón para pantallas más pequeñas */
+  }
+
+  .circle {
+    width: 14px; /* Ajusta el tamaño de los círculos para pantallas más pequeñas */
+    height: 14px; /* Ajusta el tamaño de los círculos para pantallas más pequeñas */
+    margin-bottom: 20px; /* Ajusta el espacio entre los círculos y el texto para pantallas más pequeñas */
+  }
+
+  .left-form input,
+  .left-form textarea {
+    padding: 8px; /* Ajusta el relleno de los campos de entrada para pantallas más pequeñas */
+    margin-bottom: 10px; /* Ajusta el espacio entre los campos de entrada para pantallas más pequeñas */
+    font-size: 0.8em; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  }
+
+  .left-form label {
+    font-size: 0.7em; /* Ajusta el tamaño del texto de la etiqueta para pantallas más pequeñas */
+    margin-bottom: 3px; /* Ajusta el espacio entre las etiquetas y los campos de entrada para pantallas más pequeñas */
+  }
+
+  .left-form button {
+    padding: 8px 12px; /* Ajusta el relleno del botón para pantallas más pequeñas */
+    font-size: 0.8em; /* Ajusta el tamaño del texto del botón para pantallas más pequeñas */
+  }
+}
+
+
+
+
+
+
+
+
+
+

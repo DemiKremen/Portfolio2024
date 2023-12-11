@@ -1,0 +1,43 @@
+.container {
+    align-items: center;
+    justify-content: center;
+    width: 55%;    
+  }
+  
+  .skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .flex-grow-1 {
+    flex-grow: 1;
+    margin-left: 1rem;
+  }
+  
+
+  .progress {
+    position: relative;
+    height: 3px;
+    width: 100%;
+    background-color: #ccc; /* Color de fondo de la barra de progreso */
+  }
+  
+  .progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #781EDC; /* Color violeta */
+    animation: 4s ease-in-out forwards; /* Animación de llenado */
+  }
+  
+  /* Aplicar color violeta a los iconos */
+  .skill-item svg {
+    color: #D9D9D9;
+  }
+  
+  /* Aplicar color violeta a los nombres de habilidades */
+  .skill-item p {
+    color: #D9D9D9;
+  }
+
+  
