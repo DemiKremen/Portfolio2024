@@ -1,0 +1,290 @@
+@media screen and (max-width: 475px) {
+
+
+    @font-face {
+      font-family: 'Neue Haas Grotesk Display Pro Roman';
+      src: url('../Assets/NeueHaasDisplayRoman.ttf') format('truetype');
+    }
+
+    .fondogeneral{
+      background-color: #781EDC;
+    }
+  
+    h2 {
+      font-family: 'Hellix ExtraBold';
+      font-size: 24px;
+      line-height: 1;
+      color: #D9D9D9;
+    }
+  
+    h6 {
+      font-family: 'Neue Haas Grotesk Display Pro Roman';
+      font-size: 14px;
+      line-height: 1.2;
+      color: #D9D9D9;
+    }
+  
+    h3 {
+      font-family: 'Neue Haas Grotesk Display Pro Roman';
+      font-size: 14px; /* Añadí 'px' aquí */
+      line-height: 1.2;
+      color: #D9D9D9;
+    }
+  
+    .card {
+      border: none;
+    }
+  
+    .card-title {
+      font-family: 'Hellix ExtraBold';
+      font-size: 22px;
+    }
+  
+    .card-text {
+      font-family: 'Neue Haas Grotesk Display Pro Roman';
+      font-size: 14px;
+      line-height: 1.2;
+    }
+    
+   .card-img-overlay {
+      position: absolute;
+      top: 50%;
+      left: 35%;
+      text-align: left;
+    } 
+  
+
+  
+    .full-width-card {
+      flex-direction: column; /* Cambia la dirección del flex container a columna */
+      align-items: center;
+      text-align: center;
+      margin: 0px;
+      border-radius: 10px;
+      padding: 10px;
+      border: none;
+      background-color: transparent;
+    }
+
+    .right-content {
+      background-color: #262626;
+      border: solid 2px #781EDC;
+      border-radius: 5px;
+    }
+  
+    h2,
+    h6,
+    .boton-cv {
+      margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+      margin-right: 0; /* Elimina el margen derecho */
+    }
+  
+    .circle {
+      display: none; /* Ajusta el margen inferior según sea necesario */
+    }
+
+
+
+
+
+
+    .fondo-habilidades{
+      width: 100%;
+      padding: 60px;
+      background-image: url('../Assets/fondohabil.png');
+      background-size: 100% 100%; /* Cambiado a 100% 100% para adaptarse a cualquier tamaño */
+    }
+    
+    .hablidades {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+      margin: 0;
+      padding: 15px;
+    }
+
+
+
+
+
+
+    .fondo-portafolio {
+      width: 100%;
+      padding: 10px;
+      background-image: url('../Assets/fondogris.png');
+      background-size: 100% 100%; /* Cambiado a 100% 100% para adaptarse a cualquier tamaño */
+    }
+    
+    .portafolio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin: 0;
+      padding: 15px;
+      color: #262626;
+    }
+    
+    .image-container {
+      display: flex;
+      justify-content: center; /* Cambiado a 'center' */
+      margin-top: 5px; /* Ajusta según sea necesario */
+      transition: transform 0.5s ease-out;
+      transform-style: preserve-3d;
+    }
+    
+    .image-container img {
+      width: 33%; /* Ajusta según sea necesario */
+      border-radius: 1%;
+      transition: transform 0.9s ease-out;
+    }
+    
+    .image-container img:hover {
+      transform: scale(00.5em);
+    }
+    
+    .enlace-behance {
+      color: inherit; 
+      text-decoration: none; 
+      cursor: pointer;
+    }
+    
+    .enlace-behance:hover {
+      text-decoration: underline; 
+    }
+
+    .flecha-juli{
+      font-size: 14px; /* Tamaño del ícono, ajusta según sea necesario */
+    }
+
+
+
+    .experience-title {
+      font-family: 'Neue Haas Grotesk Display Pro Roman';
+      font-size: 18px;
+      color: #D9D9D9;
+    }
+    
+    .experience-description {
+      font-family: 'Neue Haas Grotesk Display Pro Roman';
+      font-size: 14px;
+      line-height: 1.2;
+      color: #D9D9D9;
+      margin-top: 0px;
+    }
+
+
+    
+    .timeline-arrow {
+      color: #781EDC; /* Color del ícono, ajusta según sea necesario */
+      font-size: 20px; /* Tamaño del ícono, ajusta según sea necesario */
+      margin-top: 20px; /* Espaciado superior del ícono, ajusta según sea necesario */
+    }
+    
+    .timeline-content {
+      background: transparent;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15);
+      margin-top: 10px; /* Ajusta según sea necesario */
+      height: 100px; /* Ajusta la altura según tus necesidades */
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+
+  
+    .sexta-card {
+      display: flex;
+      flex-direction: column;
+      background-image: url('../Assets/mobilefinal.png');
+      background-size: cover;
+      background-position: center;
+      justify-content: center;
+      align-items: center;
+      padding: 20px; /* Reduce el espacio interior en dispositivos más pequeños */
+      margin: 0;
+    }
+    
+    .cuadrado {
+      display: flex;
+      flex-direction: column; /* Ajusta a disposición de columna para dispositivos móviles */
+      align-items: center;
+      border-radius: 5px;
+      position: relative;
+    }
+    
+    .right-content-fin,
+    .left-form {
+      padding: 20px;
+      background-color: transparent;
+      width: 100%; /* Ocupa el 100% del ancho del contenedor */
+      color: #D9D9D9;
+    }
+    
+
+    
+    .right-content-fin h2 {
+      color: #D9D9D9;
+    }
+    
+    .right-content-fin h6 {
+      color: #D9D9D9;
+      text-align: left;
+    }
+    
+    .social-icons {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .icon {
+      color: #D9D9D9;
+      font-size: 16px;
+      margin-top: 0px;
+    }
+    
+    .left-form input,
+    .left-form textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #781EDC;
+      border-radius: 5px;
+      font-size: 1em;
+      width: 100%;
+    }
+    
+    .left-form form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .left-form label {
+      font-family: 'Neue Haas Grotesk Display Pro Roman';
+      line-height: 1.2;
+      color:#D9D9D9;
+      font-size: 0.8em;
+      margin-bottom: 5px;
+    }
+    
+    .left-form button {
+      padding: 10px 15px;
+      background-color: #781EDC;
+      color: #D9D9D9;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.8em;
+      transition: background-color 0.3s;
+      width: 100%;
+    }
+    
+    
+  }
+  

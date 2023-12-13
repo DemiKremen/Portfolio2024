@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaBars } from 'react-icons/fa'; // Importa FaBars de react-icons/fa
-import Logo from '../Assets/Logo.png'; // Ajusta la ruta según la estructura de tu proyecto
+import { FaBars } from 'react-icons/fa';
+import Logo from '../Assets/Logo.png';
 import '../Navbar/Navbar.css';
 import LogoMobile from '../Assets/logomobile.png';
 
@@ -12,19 +12,29 @@ function Navbar() {
     setMenuOpen(!isMenuOpen);
   };
 
+  const scrollToContact = () => {
+    const contactoElement = document.getElementById('contacto');
+    if (contactoElement) {
+      window.scrollTo({
+        top: contactoElement.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <div className='fondonavbar'>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <img
-              src={LogoMobile} 
-              className="logo-img d-block d-lg-none" // Se muestra solo en dispositivos pequeños
+              src={LogoMobile}
+              className="logo-img d-block d-lg-none"
               alt="Logo"
             />
             <img
               src={Logo}
-              className="logo-img d-none d-lg-block" // Se muestra solo en dispositivos grandes
+              className="logo-img d-none d-lg-block"
               alt="Logo Mobile"
             />
           </a>
@@ -46,7 +56,11 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link color-texto" href="#">
+                <a
+                  className="nav-link color-texto"
+                  onClick={scrollToContact}
+                  style={{ cursor: 'pointer' }}
+                >
                   Contacto
                 </a>
               </li>

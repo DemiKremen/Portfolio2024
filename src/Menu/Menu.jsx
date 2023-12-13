@@ -3,25 +3,10 @@ import { SiAdobeillustrator, SiAdobephotoshop, SiCanva, SiAdobeindesign, SiAdobe
 import { CgFigma } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
+import ProgressBar from './ProgressBar';
 import './menu.css';
 
-const ProgressBar = ({ width }) => (
-  <div className="progress" style={{ height: '3px', width: '100%' }}>
-    <div className="progress-bar" style={{ width: `${width}%` }}></div>
-  </div>
-);
-
-const SkillItem = ({ icon, skill, width }) => (
-  <div className="skill-item">
-    {icon}
-    <div className="flex-grow-1">
-      <p className="mb-0">{skill}</p>
-      <ProgressBar width={width} />
-    </div>
-  </div>
-);
-
-const Menu = () => {
+const SkillItem = ({ icon, skill, width }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -41,13 +26,18 @@ const Menu = () => {
     };
   }, []);
 
-  useEffect(() => {
-    if (isVisible) {
-      // Agrega tu lógica de animación aquí
-      // Puedes usar CSS, bibliotecas de animación o JavaScript puro
-    }
-  }, [isVisible]);
+  return (
+    <div className={`skill-item ${isVisible ? 'visible' : ''}`}>
+      {icon}
+      <div className="flex-grow-1">
+        <p className="mb-0">{skill}</p>
+        <ProgressBar width={width} isVisible={isVisible} />
+      </div>
+    </div>
+  );
+};
 
+const Menu = () => {
   return (
     <div className="container" id="skills-section">
       <SkillItem icon={<SiAdobeillustrator size={24} />} skill="Illustrator" width={90} />
@@ -63,3 +53,4 @@ const Menu = () => {
 };
 
 export default Menu;
+

@@ -128,6 +128,15 @@ h3{
   margin: 20px;
 }
 
+.enlace-behance{
+  color: #262626;
+  opacity: 0.6;
+}
+
+.flecha-juli{
+  font-size: 24px; /* Tamaño del ícono, ajusta según sea necesario */
+}
+
 .boton-cv {
   display: inline-block;
   align-items: center; 
@@ -444,7 +453,7 @@ h6,
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 60px; /* Ajusta según sea necesario para márgenes grandes */
+  margin-bottom: 20px; /* Ajusta según sea necesario para márgenes grandes */
   position: relative;
   text-align: center;
   width: 100%;
@@ -476,6 +485,9 @@ h6,
   line-height: 1.2;
   color: #D9D9D9;
   font-size: 1em;
+  background-color: #262626;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 .timeline-content h3 {
@@ -625,126 +637,73 @@ h6,
 
 
 
-
-@media (max-width: 430px) {
-  /* Estilos ajustados para la primera card */
+@media (max-width: 400px) {
   .card {
-    border-radius: none;
+    background-image: url('../Assets/fotoportadamobile.png');
   }
 
   .card-title {
-    font-size: 25px; /* Ajusta el tamaño del título para pantallas más pequeñas */
-    align-items: top;
-    justify-content: top;
+    font-size: 15px;
+    margin-bottom: 10px;
   }
 
   .card-img-overlay {
-    left: 40%; /* Centrar el texto horizontalmente en pantallas más pequeñas */
+    left: 40%;
   }
 
   .card-text {
-    font-size: 15px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    margin-top: 0px;
+    font-size: 10px
+  }
+
+
+
+
+  .full-width-card {
+    background-color: #262626;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  /* Estilos ajustados para la segunda card */
-  .full-width-card {
-    flex-direction: column; /* Cambia la dirección del flexbox para apilar la imagen y el contenido en pantallas más pequeñas */
-    align-items: center; /* Centra los elementos horizontalmente en pantallas más pequeñas */
-  }
-
   .left-image {
-    width: 100%; /* Ajusta el ancho de la imagen al 100% para que ocupe todo el ancho del contenedor */
+    /* Ajusta los estilos de la imagen izquierda en pantallas pequeñas */
+    width: 100%; /* Haz que la imagen ocupe todo el ancho */
   }
 
   .right-content {
-    padding: 10px; /* Ajusta el relleno para pantallas más pequeñas */
-    margin: 10px; /* Ajusta el margen para pantallas más pequeñas */
-    text-align: center; /* Centra el texto horizontalmente en pantallas más pequeñas */
-  }
-
-  h2 {
-    font-size: 20px; /* Ajusta el tamaño del título para pantallas más pequeñas */
-    text-align: center;
-  }
-
-  h6 {
-    font-size: 12px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
-    margin-bottom: 10px; /* Ajusta el espacio entre el texto y el botón */
-    text-align: center;
-  }
-  p{
-    text-align: center;
-  }
-
-  .boton-cv {
-    padding: 5px 10px; /* Ajusta el relleno del botón para pantallas más pequeñas */
-    font-size: 12px; /* Ajusta el tamaño del texto del botón para pantallas más pequeñas */
-  }
-
-  .sexta-card {
-    padding: 50px; /* Ajusta el relleno para pantallas más grandes */
-  }
-
-  .cuadrado {
-    flex-direction: column; /* Cambia la dirección del flexbox para apilar los elementos en pantallas más pequeñas */
-    align-items: center; /* Centra los elementos horizontalmente en pantallas más pequeñas */
     width: 100%;
-  }
-
-  .right-content,
-  .left-form {
-    flex: 1;
-    padding: 10px; /* Ajusta el relleno para pantallas más pequeñas */
-    text-align: center; /* Centra el texto horizontalmente en pantallas más pequeñas */
-  }
-
-  .right-content h2 {
-    font-size: 24px; /* Ajusta el tamaño del título para pantallas más pequeñas */
-    margin-bottom: 5px; /* Ajusta el espacio entre el título y el párrafo */
-  }
-
-  .right-content h6 {
-    font-size: 14px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
-    margin-bottom: 10px; /* Ajusta el espacio entre el párrafo y el botón */
-  }
-
-  .boton-cv {
-    padding: 8px 12px; /* Ajusta el relleno del botón para pantallas más pequeñas */
-    font-size: 14px; /* Ajusta el tamaño del texto del botón para pantallas más pequeñas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .circle {
-    width: 14px; /* Ajusta el tamaño de los círculos para pantallas más pequeñas */
-    height: 14px; /* Ajusta el tamaño de los círculos para pantallas más pequeñas */
-    margin-bottom: 20px; /* Ajusta el espacio entre los círculos y el texto para pantallas más pequeñas */
+    display: none;
   }
 
-  .left-form input,
-  .left-form textarea {
-    padding: 8px; /* Ajusta el relleno de los campos de entrada para pantallas más pequeñas */
-    margin-bottom: 10px; /* Ajusta el espacio entre los campos de entrada para pantallas más pequeñas */
-    font-size: 0.8em; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  .mobile-center {
+    /* Estilos para centrar texto en pantallas pequeñas */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
-  .left-form label {
-    font-size: 0.7em; /* Ajusta el tamaño del texto de la etiqueta para pantallas más pequeñas */
-    margin-bottom: 3px; /* Ajusta el espacio entre las etiquetas y los campos de entrada para pantallas más pequeñas */
+  .mobile-center h2 {
+    font-size: 20px;
   }
 
-  .left-form button {
-    padding: 8px 12px; /* Ajusta el relleno del botón para pantallas más pequeñas */
-    font-size: 0.8em; /* Ajusta el tamaño del texto del botón para pantallas más pequeñas */
+  .mobile-center h6 {
+    /* Estilos para achicar los textos en pantallas pequeñas */
+    font-size: 14px;
   }
+
+  .boton-cv {
+    /* Estilos para achicar el botón en pantallas pequeñas */
+    font-size: 14px;
+    padding: 5px 10px; /* Ajusta el espaciado del botón */
+  }
+  
 }
-
-
-
-
-
-
-
-
-
-

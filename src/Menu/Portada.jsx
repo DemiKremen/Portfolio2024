@@ -9,14 +9,16 @@ import mystic from '../Assets/mystic.png';
 import web from '../Assets/web.png';
 import { FaArrowDown } from 'react-icons/fa';
 import { FaBehance, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaCircleArrowRight } from "react-icons/fa6";
+import Mobile from '../Menu/mobile';
 
 
   const cvLink = "https://drive.google.com/file/d/114FJUvtfdoCwAiYeNy2PnGC281WPXWZ4/view?usp=sharing";
 
   const handleDownloadClick = () => {
+    // Abre el enlace en una nueva ventana o pestaña
     window.open(cvLink, "_blank");
   };
-
 
 const Portada = () => {
   return (
@@ -31,13 +33,13 @@ const Portada = () => {
       </div>
       
       {/* Segunda Card*/}
-      <div className="full-width-card">
+      <div className="full-width-card" id="mobile-card">
       <img src={fotohola} className="left-image" alt="Foto de hola" />
       <div className="right-content">
         <div className="circle violeta"></div>
         <div className="circle blanco"></div>
-        <h2>¡Hola!</h2>
-        <h6>Soy Demian Kremenchuzky, diseñador integral especializado en Web, UX/UI, programación y diseño gráfico.<br /><br />Descarga mi CV para conocer mi experiencia y descubre cómo puedo potenciar tu próximo proyecto. ¡Gracias por tu interés!</h6>
+        <h2 className='mobile-center'>¡Hola!</h2>
+        <h6 className='mobile-center'>Soy Demian Kremenchuzky, diseñador integral especializado en Web, UX/UI, programación y diseño gráfico.<br /><br />Descarga mi CV para conocer mi experiencia y descubre cómo puedo potenciar tu próximo proyecto. ¡Gracias por tu interés!</h6>
         <button className="boton-cv" onClick={handleDownloadClick}>
           Descargar CV <IoIosDownload />
         </button>
@@ -53,7 +55,7 @@ const Portada = () => {
     {/* Cuarta Card*/}
       <div class="card fondo-portafolio">
         <h2 className="fondotodo portafolio">PORTAFOLIO</h2>
-        <h3 className="img-overlay portafolio"> MIS ÚLTIMOS TRABAJOS. <a href="https://www.behance.net/demiankremenc1" target="_blank" rel="noopener noreferrer" className="enlace-behance">VER MÁS--</a></h3>
+        <h3 className="img-overlay portafolio"> MIS ÚLTIMOS TRABAJOS. <a href="https://www.behance.net/demiankremenc1" target="_blank" rel="noopener noreferrer" className="enlace-behance">VER MÁS <FaCircleArrowRight className='flecha-juli' /></a></h3>
         <div className="image-container">
           <img src={diadi}/>
           <img src={mystic}/>
@@ -61,8 +63,9 @@ const Portada = () => {
         </div>
       </div>
 
-      <div className="timeline-container">
+      
       {/* Quinta Card (Timeline) */}
+      <div className="timeline-container">
       <div className="card fondo-timeline">
         <h2 className="fondotodo timeline">EXPERIENCIA</h2>
       </div>
@@ -81,7 +84,7 @@ const Portada = () => {
         <div className="timeline-item">
           <div className="timeline-year">2021</div>
           <div className="timeline-content">
-            <h3>Lifernado Germany</h3>
+            <h3>Liferando Germany</h3>
             <p>Delivery en Koln</p>
           </div>
           <FaArrowDown className="timeline-arrow" />

@@ -1,43 +1,56 @@
 .container {
-    align-items: center;
-    justify-content: center;
-    width: 55%;    
-  }
-  
-  .skill-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  
-  .flex-grow-1 {
-    flex-grow: 1;
-    margin-left: 1rem;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 20px; /* Agregado para dar espacio alrededor del contenido */
+}
 
-  .progress {
-    position: relative;
-    height: 3px;
-    width: 100%;
-    background-color: #ccc; /* Color de fondo de la barra de progreso */
-  }
-  
-  .progress-bar {
-    width: 0;
-    height: 100%;
-    background-color: #781EDC; /* Color violeta */
-    animation: 4s ease-in-out forwards; /* Animación de llenado */
-  }
-  
-  /* Aplicar color violeta a los iconos */
-  .skill-item svg {
-    color: #D9D9D9;
-  }
-  
-  /* Aplicar color violeta a los nombres de habilidades */
-  .skill-item p {
-    color: #D9D9D9;
-  }
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin: 10px; /* Ajusta según sea necesario */
+  opacity: 0; /* Inicialmente oculta todos los elementos */
+  transition: opacity 1s ease; /* Transición de opacidad para un efecto suave */
+}
 
-  
+.skill-item.visible {
+  opacity: 1; /* Muestra los elementos cuando son visibles */
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+
+.progress {
+  position: relative;
+  height: 3px;
+  width: 100%;
+  background-color: #ccc; /* Color de fondo de la barra de progreso */
+}
+
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #781EDC; /* Color violeta */
+  transition: width 2s ease; /* Transición de anchura para un efecto suave */
+}
+
+.progress-bar.start-animation {
+  width: 100%;
+}
+
+.skill-item svg {
+  color: #D9D9D9;
+}
+
+.skill-item p {
+  color: #D9D9D9;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 70%; /* O ajusta según sea necesario para ocupar un ancho específico */
+  }
+}
